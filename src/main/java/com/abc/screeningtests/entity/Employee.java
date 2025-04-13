@@ -23,6 +23,7 @@ public class Employee {
 	    
 
 	    @ManyToOne
+	 @JsonBackReference
 	    private Department department;
 
 	    @OneToOne(cascade = CascadeType.ALL)
