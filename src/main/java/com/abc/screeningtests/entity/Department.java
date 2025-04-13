@@ -15,6 +15,7 @@ public class Department {
 	    private String location;
 
 	    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
+	    @JsonManagedReference
 	    private List<Employee> employees;
 		public Long getId() {
 			return id;
